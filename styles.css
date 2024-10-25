@@ -1,0 +1,93 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0; /* Fondo gris claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Layout horizontal para el menú y los gráficos */
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 60px; /* Espacio superior para el navbar */
+}
+
+.menu-container {
+    width: 350px; /* Mantener el ancho del menú */
+    background-color: #e0e0e0; /* Color gris oscuro */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.chart-container {
+    flex-grow: 1; /* El gráfico ocupará el resto del espacio disponible */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#chart {
+    width: 100%;
+    height: 700px; /* Gráficas mucho más grandes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chart svg {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: transparent; /* Hacer el fondo de las gráficas transparente */
+}
+
+input[type="file"],
+label,
+select {
+    display: block;
+    margin: 20px auto;
+    width: 100%; /* Asegurar que todos los elementos sean del mismo ancho */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #402a2a;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Asegura que padding no afecte el ancho */
+}
+
+input[type="file"]:hover,
+select:hover {
+    border-color: #3498db;
+}
+
+input[type="radio"] {
+    margin: 10px;
+}
+
+h1 {
+    color: #606060; /* Gris oscuro para el título "Opciones" */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#orientationContainer {
+    margin-top: 20px;
+}
+
+/* Aumentar el tamaño del texto de las gráficas */
+#chart svg text {
+    font-size: 14px;
+}
+
+
+
+
+
